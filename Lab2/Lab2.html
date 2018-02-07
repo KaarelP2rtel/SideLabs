@@ -38,7 +38,7 @@
 <td>2592*1944*10*12/8/1048576 = 72.08 MB/s</td>
 </tr>
 <tr>
-<td colspan="6">LISA SIIA SUURIMA VÕIMALIKU EKRAANIPILT!</td>
+<td colspan="6"><a href="Suurim.png"><img src="Suurim.png" width=30%></a></img></td>
 </tr>
 </tbody></table>
 <p>
@@ -61,7 +61,7 @@
 </td>
 </tr>
 <tr>
-<td colspan="6">LISA SIIA VGA EKRAANIPILT!</td>
+<td colspan="6"><img src="VGA.png"></img></td>
 </tr>
 </tbody></table>
 <p>
@@ -84,7 +84,7 @@
 </td>
 </tr>
 <tr>
-<td colspan="6">LISA SIIA CIF EKRAANIPILT</td>
+<td colspan="6"><img src="cif.png"></img></td>
 </tr>
 </tbody></table>
 <p>
@@ -107,7 +107,7 @@
 </td>
 </tr>
 <tr>
-<td colspan="6">LISA SIIA QCIF EKRAANIPILT!</td>
+<td colspan="6"><img src="qcif.png"></td>
 </tr>
 </tbody></table>
 
@@ -131,7 +131,7 @@ LISA SIIA LABORI VÕRGU SKEEM!
 </tbody></table>
 <p>
 <b>Järeldused katsetulemuste kohta:</b><br>
-KIRJUTA JÄRELDUSED KATSETULEMUSTE KOHTA SIIA!
+Kommutaatori pordid ei tööta identselt, kuna viite hinnang oli porditi erinev.
 </p><h3>4., 5., 6. Tulemused</h3>
 
 <table cellspacing="0" cellpadding="4" border="1">
@@ -203,22 +203,38 @@ Videot tuleks pakkida kokku 81.25% (Ehk alles jääks ainult 9%)
 <br>
 
 <h3>8. Koodekite uurimine </h3>
+<a href="Telefon.png"><img src="Telefon.png" width=50%></a></img><br>
+<p>Telefoni koodekite konfiguratsioon</p>
+<br><br>
 Küsimus: 1. Mis on nende kahe helistamise korral erinevat?<br>Vastus:
 Telefonilt telefonile helistades oli pildi kvaliteet märgatavalt parem kui Telefonist X Lite-i.
 <p>
 Küsimus: 2. Mis on võimalike erinevuste põhjuseks?<br>Vastus:
 Põhjuseks on see, et telefonid kasutavad H264 koodekit aga X Lite H263 Koodekit.</br>
-Kui m]lemad kasutaksid sama koodekit, siis oleks tulemus parem.
+Kui mõlemad kasutaksid sama koodekit, siis oleks tulemus parem.
 </p><h2>9. Individuaalülesande lahendus</h2>
 
 <p>
-KIRJUTA INDIVIDUAALÜLESANDE LAHENDUS SIIA!
+Sidevõrk: HSPA
+Meediavoog: FHD 1080i @30fps 4:2:0
+<br>
+<p><a href="https://en.wikipedia.org/wiki/High_Speed_Packet_Access">https://en.wikipedia.org/wiki/High_Speed_Packet_Access</a> andmetel on tavalise HSPA maksimaalne kiirus 14.4 Mb/s ehk 1.8 MB/s</p>
+<br>
+Meediavoo edastuskiirus:
+1 piksli maht: 4/4*8 + 2/4*8 + 0/4*8 = 8+4+0 = 12<br>
+1 kaadri maht: 1920*1080*12*(1/2) = 12441600 bitti = 1555200 Baiti = 1.48 MB (Maht on jagatud kahega, kuna Interalced video puhul edastatakse ainult paaris või paarituarvulised read.)<br>
+Edastuskiirus: 1.48*30=44.4MB<br><br>
+Kuna video andmemaht on ligi 10 korda suurem, kui võrgu läbilaske võime, siis pakkimatta video edastus reaalajas ei ole võimalik. Kui seda tehtaks, oleks video väga katkendlik ja kvaliteet äärmiselt halb.<br>
+ Olukorda saaks paremaks teha, kui videot kokku pakkida, mis aga vähendaks video kvaliteeti. Teine variant on kasutada puhverdamist, millega kaoks aga ära video reaalajalisus.
+
 </p><p>
 
 </p><h2>Kokkuvõte ja järeldused</h2>
 
 <p>
-KIRJUTA KOKKUVÕTE JA JÄRELDUSED SIIA!
+Labori käigus vaatasime erineva resolutsiooniga videopilte, ning katsetasime video ning heli edastust üle <br>
+piiratud võrkude. Töö käigus jõudsin järeldusele, et toore, töötlemata video ja pildi edastamine üle võrgu on praktiliselt võimatu isegi piiramata võrgu puhul<br> 
+Lisaks sain teada, kuidas mõjutavad erinevad võrgu piirangud andmete edastamist.
 </p><p>
 
 
