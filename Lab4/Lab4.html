@@ -78,7 +78,15 @@ LISA SIIA LABORI SISEVÕRGU SKEEM!
 <p>
 Sidekanali läbilaskevõime  arvutused 2,4 GHz WLAN võrgus.
 </p><p>
-LISA SIIA SIDEKANALI LÄBILASKEVÕIME ARVUTUSED 2,4 GHz VÕRGU KOHTA!
+R = W log2 (1+S/N)<br>
+S[mW]=10 ^ (-30/10)=0.001<br>
+N[mW]=10 ^ (-58/10)=0.00000158489<br>
+
+S/N[kordades]=630.96<br>
+
+R = 20 * log2(1 + 630.96)<br>
+R = 186.07 Mb/s<br>
+
 
 </p><h3>5 GHz WLAN võrk</h3>
 <p>
@@ -106,14 +114,46 @@ LISA SIIA SIDEKANALI LÄBILASKEVÕIME ARVUTUSED 2,4 GHz VÕRGU KOHTA!
 <p>
 Sidekanali läbilaskevõime arvutused 5 GHz WLAN võrgus.
 </p><p>
-LISA SIIA SIDEKANALI LÄBILASKEVÕIME ARVUTUSED 5GHz VÕRGU KOHTA!
+
+R = W log2 (1+S/N)<br>
+S[mW]=10 ^ (-50/10)=0.00001<br>
+N[mW]=10 ^ (-62/10)=6.31*10^-7<br>
+
+S/N[kordades]=15.85<br>
+
+R = 40 * log2(1 + 15.85)<br>
+R = 162.98 Mb/s<br>
+
 </p><h2>3. WLAN võrgu uurimine</h2>
 <h3>Netsh</h3>
 <table cellspacing="0" cellpadding="4" border="1">
 <tbody><tr>
 <td colspan="2"><small>2,4 GHz võrk</small> 2.4VRK</td></tr>
 <tr><td colspan="2">
-<pre>KOPEERI ESIMESE KÄSU VÄLJUNDFAILI SISU SIIA!
+<pre>
+	
+There is 1 interface on the system: 
+
+    Name                   : Wi-Fi
+    Description            : ASUS USB-AC56 802.11ac Wireless USB Adapter
+    GUID                   : 68ec5b64-3808-47d0-956c-3f8e2ca48b73
+    Physical address       : f0:79:59:e8:ba:ef
+    State                  : connected
+    SSID                   : 2.4VRK
+    BSSID                  : 08:62:66:8d:43:f8
+    Network type           : Infrastructure
+    Radio type             : 802.11g
+    Authentication         : WPA2-Personal
+    Cipher                 : CCMP
+    Connection mode        : Profile
+    Channel                : 13
+    Receive rate (Mbps)    : 54
+    Transmit rate (Mbps)   : 54
+    Signal                 : 100% 
+    Profile                : 2.4VRK 
+
+    Hosted network status  : Not available
+
 </pre>
 </td></tr>
 <tr>
@@ -123,7 +163,30 @@ LISA SIIA SIDEKANALI LÄBILASKEVÕIME ARVUTUSED 5GHz VÕRGU KOHTA!
 <td>54 Mb/s mõlemas suunas</td>
 </tr><tr><td colspan="2"><small>5 GHz võrk</small> 5.0VRK</td></tr>
 <tr><td colspan="2">
-<pre>KOPEERI TEISE KÄSU VÄLJUNDFAILI SISU SIIA!
+<pre>
+	
+There is 1 interface on the system: 
+
+    Name                   : Wi-Fi
+    Description            : ASUS USB-AC56 802.11ac Wireless USB Adapter
+    GUID                   : 68ec5b64-3808-47d0-956c-3f8e2ca48b73
+    Physical address       : f0:79:59:e8:ba:ef
+    State                  : connected
+    SSID                   : 5.0VRK
+    BSSID                  : 08:62:66:8d:43:fc
+    Network type           : Infrastructure
+    Radio type             : 802.11n
+    Authentication         : WPA2-Personal
+    Cipher                 : CCMP
+    Connection mode        : Profile
+    Channel                : 136
+    Receive rate (Mbps)    : 300
+    Transmit rate (Mbps)   : 300
+    Signal                 : 100% 
+    Profile                : 5.0VRK 
+
+    Hosted network status  : Not available
+
 </pre>
 </td></tr>
 <tr>
@@ -194,17 +257,40 @@ ole teisi seadmeid, siis arvatavasti tulevad need USB 2.0 läbilaskevõime
 </p><p>
 
 Milline oli mõlema võrgu (802.11g ja 802.11n) korral maksimaalne saavutatud kiirus mõlema protokolli (TCP ja UDP) korral?</p>
-<p>KÜSIMUSE VASTUS SIIA!</p>
+<p>
+UDP puhul 34.18 Mb/s 802.11g võrgus ja 242.44 Mb/s 802.11n võrgus<br>
+TCP puhul 28.59 Mb/s 802.11g võrgus ja 206.92 Mb/s 802.11n võrgus<br>
+
+</p>
 
 <h2>5. Individuaalülesanne</h2>
 <p>
-KIRJUTA INDIVIDUAALÜLESANDE LAHENDUS SIIA!
+Variant 6<br>
+WLAN Sagedus F = 5600 MHz<br>
+Saatja Väljundvõimsus Ps = 70 mW<br>
+
+Saatja võimendus Gs = 2 dBi<br>
+Kaugus d = 80m<br>
+Vastuvõtja võimendus Gv = 3 dBi<br><br>
+
+
+FSL=20∙log10d + 20∙log10f + a<br>
+a=-27.5<br>
+FSL=20*log10(80)+20*log10(5600)-27.5=85.52dBm<br><br>
+
+
+Pv = Ps + Gs + Gv - FSL - L<br>
+Ps[dBm]=10*log10(70)=18.45 dBm<br>
+Pv = 18.45+2+3-85.52 = -62 dBmv<br>
 </p>
 
 <h2>Kokkuvõte ja järeldused</h2>
 
 <p>
-KIRJUTA KOKKUVÕTE JA JÄRELDUSED SIIA!
+
+Töö käigus seadistasime 2 juhtmevaba võrku ja mõõtsime neid võrke spektrianalüsaatoriga.<br>
+Saime teada, kuidas on seotud wifi sagedused ja kanalid ja milliseid kiiruseid on võimalik saavutada erinevates standardites.<br>
+Laboratoorse töö käigus jõudsime järeldusele, et juhtmevabad võrgud ei ole kõige stabiilsemad, ning usaldusväärse ühenduse jaoks peaks kasutama siiski kaablit.
 </p><p>
 
 </p></body></html>
