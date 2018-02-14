@@ -38,7 +38,7 @@
 <td>2592*1944*10*12/8/1048576 = 72.08 MB/s</td>
 </tr>
 <tr>
-<td colspan="6"><a href="Suurim.png"><img src="Suurim.png" width=30%></a></img></td>
+<td colspan="6"><img src="http://laborid.öä.ee/Lab2/Suurim.png" width=30%></img></td>
 </tr>
 </tbody></table>
 <p>
@@ -61,7 +61,7 @@
 </td>
 </tr>
 <tr>
-<td colspan="6"><img src="VGA.png"></img></td>
+<td colspan="6"><img src="http://laborid.öä.ee/Lab2/VGA.png"></img></td>
 </tr>
 </tbody></table>
 <p>
@@ -84,7 +84,7 @@
 </td>
 </tr>
 <tr>
-<td colspan="6"><img src="cif.png"></img></td>
+<td colspan="6"><img src="http://laborid.öä.ee/Lab2/cif.png"></img></td>
 </tr>
 </tbody></table>
 <p>
@@ -107,7 +107,7 @@
 </td>
 </tr>
 <tr>
-<td colspan="6"><img src="qcif.png"></td>
+<td colspan="6"><img src="http://laborid.öä.ee/Lab2/qcif.png"></td>
 </tr>
 </tbody></table>
 
@@ -118,7 +118,7 @@ TEL1 telefoninumber: 47<br>
 TEL2 telefoninumber: 48<br>
 <p>
 
-<img src="Skeem.png"></img>
+<img src="http://laborid.öä.ee/Lab2/Skeem.png"></img>
 </p><h3>3. Kaja test</h3>
 
 <table cellspacing="0" cellpadding="4" border="1">
@@ -176,17 +176,17 @@ Pika paketi puhul mõjutab läbilaskevõime piiramine viidet oluliselt, <br>
 </p><h3>7. Arvutused</h3>
 <h3>7.1 Edastuskiirus kasutajale</h3>
 <p>Arvutada igas pordis edastuskiirus kasutajale pika paketiga ping tulemustest.</p>
-<b>Port 1 </b>(65500/(15/1000))/1000000= 4.36 MB/s</br>
-<b>Port 2 </b>(65500/(2693/1000))/1000 = 24.32 kB/s</br>
-<b>Port 3 </b>(65500/(316/1000))/1000 = 207.27 kB/s</br>
+<b>Port 1 </b>(65500/(15/2/1000))/(1024*1024)= 8.32 MB/s</br>
+<b>Port 2 </b>(65500/((2693-15/2)/1000))/1024 = 23.81 kB/s</br>
+<b>Port 3 </b>(65500/((316-15/2)/1000))/1024 = 207.34 kB/s</br>
 <h3>7.2 Video kokkupakkimise vajadus</h3>
 <p>7.2.1 Kui palju tuleks kokku pakkida punktis 1 arvutatud suurima 
 eraldusvõimega pakkimata videot kõige kiiremas võrgus, et sidekanal ei 
 mõjutaks edastuse kvaliteeti? </p>
 <p>
-100-4.36/72.08*100=93.96
+100-8.32/72.08*100=88.45%
 
-Videot tuleks pakkida kokku 93.96%. (Ehk alles jääks ainult 4%)
+Videot tuleks pakkida kokku 88.45%. (Ehk alles jääks ainult 11.55%)
 <br>
 <br>
 </p>
@@ -196,14 +196,14 @@ et sidekanal ei mõjutaks edastuse kvaliteeti?</p>
 <p>
 
 </p>
-100-(207.27/1024)/1.08*100 = 81.25%
-Videot tuleks pakkida kokku 81.25% (Ehk alles jääks ainult 9%)
+100-(207.34/1024)/1.08*100 = 81.25%
+Videot tuleks pakkida kokku 81.25% (Ehk alles jääks ainult 18.75%)
 
 <br>
 <br>
 
 <h3>8. Koodekite uurimine </h3>
-<a href="Telefon.png"><img src="Telefon.png" width=50%></a></img><br>
+<img src="http://laborid.öä.ee/Lab2/Telefon.png" width=50%></img><br>
 <p>Telefoni koodekite konfiguratsioon</p>
 <br><br>
 Küsimus: 1. Mis on nende kahe helistamise korral erinevat?<br>Vastus:
