@@ -29,7 +29,7 @@
 
         </p>
         <h3>3.1 Sümboli edastamine RS-232C liidesel</h3>
-        <p>OMA JOONISEL NÄIDATA, kus asuvad bitijadas start-bitt, paarsusbitt, stopp-bitid ja andmebitid.
+        <p>
         </p>
         <p>
 
@@ -38,12 +38,12 @@
             <tbody>
                 <tr>
                     <td>Liikme nimi: Ruudi</td>
-                    <td rowspan="2">LISA SIIA SIGNAALI KUJU PILT!</td>
+                    <td rowspan="2"><img src="https://i.imgur.com/UYdoFTd.png"></img></td>
                 </tr>
                 <tr>
                     <td>Valitud sümbol: $
                         <br>Sümboli ASCII bitikood: 00100100
-                        <br>Sümboli ASCII bitikood edastamise järjekorras: 100100
+                        <br>Sümboli ASCII bitikood edastamise järjekorras:0010010                        
                         <br>Signaali "1" nivoo: -10V
                         <br>Signaali "0" nivoo: 10V
                         <br>Aeg esimese 0 nivoo algusest kuni viimase 0 nivoo lõpuni: 30ms
@@ -52,7 +52,7 @@
                 </tr>
             </tbody>
         </table>
-        <p>OMA JOONISEL NÄIDATA, kus asuvad bitijadas start-bitt, paarsusbitt, stopp-bitid ja andmebitid.
+        <p>
         </p>
         <p>
         </p>
@@ -60,12 +60,12 @@
             <tbody>
                 <tr>
                     <td>Liikme nimi: Kaarel</td>
-                    <td rowspan="2">LISA SIIA SIGNAALI KUJU PILT!</td>
+                    <td rowspan="2"><img src="https://i.imgur.com/gM2uHZe.png"></img></td>
                 </tr>
                 <tr>
                     <td>Valitud sümbol: F
                         <br>Sümboli ASCII kood: 01000110
-                        <br>Sümboli ASCII bitikood edastamise järjekorras: 1000110
+                        <br>Sümboli ASCII bitikood edastamise järjekorras: 0110001
                         <br>Signaali "1" nivoo: -10V
                         <br>Signaali "0" nivoo: 10V
                         <br>Aeg esimese 0 nivoo algusest kuni viimase 0 nivoo lõpuni: 26.4
@@ -75,9 +75,11 @@
             </tbody>
         </table>
 
-        <p>Edastuskiirus (bit/s):
-            <br>ARVUTADA EDASTUSKIIRUS!
-
+        <p>Edastuskiirus (bit/s):</br>
+            3bit/10ms </br>
+            x100 </br>
+            300bit/s
+            
         </p>
         <p>
         </p>
@@ -88,7 +90,7 @@
                     <td><b>Mis muutus, kui paarsuskontrolli viisiks seada Odd:</b>
                         <br>Paarsusbitt oli teistpidi</td>
                     <td>
-                        <img src="" alt="LISA SIIA SIGNAALI KUJU PILT!">
+                        <img src="https://i.imgur.com/S9yEKD7.png"></img>
                     </td>
                 </tr>
             </tbody>
@@ -100,17 +102,20 @@
             <tbody>
                 <tr>
                     <td>Valitud sümbol: K
-                        <br>Sümboli ASCII kahendkood edastamise järjekorras: 1001011
+                        <br>Sümboli ASCII kahendkood edastamise järjekorras:1101001
+                        
                         <br>Aeg esimese 0 nivoo algusest kuni viimase 0 nivoo lõpuni:728us
                         <br>Mitu bitti selle aja jooksul edastati: 7
                     </td>
-                    <td>LISA SIIA SIGNAALI KUJU PILT!</td>
+                    <td><img src="https://i.imgur.com/eFHlj0Z.png"></img></td>
                 </tr>
             </tbody>
         </table>
 
-        <p>Edastuskiirus (bit/s):
-            <br>ARVUTADA EDASTUSKIIRUS!</p>
+        <p>Edastuskiirus (bit/s):</br>
+            7bit/728us</br>
+            x1000000</br>
+            9615 bit/s
         <h3>3.3 Modemühendus arvutite vahel</h3>
 
         <table cellspacing="0" cellpadding="4" border="1">
@@ -121,7 +126,7 @@
                     <td colspan="2">980Hz</td>
                     <td colspan="2">1.65KHz</td>
                     <td>
-                        <img src="" alt="LISA SPEKTRI PILT!">
+                        <img src="https://i.imgur.com/mBdPEtm.png" >
                         <br>
                     </td>
                 </tr>
@@ -154,7 +159,7 @@
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <img src="" alt="LISA MAKRO TULEMUSTE PILT!">
+                        <img src="https://i.imgur.com/FyLZYez.png">
                     </td>
                 </tr>
 
@@ -168,7 +173,7 @@
                     <td>Diakriitilised märgid on kohale jõudnud kahe eraldi sümbolina</td>
                 </tr>
                 <tr>
-                    <td colspan="2">LISA SIIA TERA TERM EKRAANIPILT!</td>
+                    <td colspan="2"> <img src="https://i.imgur.com/odgUROy.jpg"></td>
                 </tr>
             </tbody>
         </table>
@@ -177,21 +182,23 @@
             <br>1) bitikiirus faili edastamisel makro tulemutest
             <br>
         </p>
-        <p>KIRJUTA LAHENDUS SIIA!
+        <p>
+			1389*8/7=1553.14 bit/s
         </p>2) bitikiirus järjestikliidese ja modemite kaudu moodustatud faili ülekande kanalis. Aruandes tuua ära lahenduskäik.
-        <p>KIRJUTA LAHENDUS SIIA!
+        <p>1389*8/48=226.5 bit/s
         </p>
         <p>3) Kuna sidekanal on seadistatud 7-bitise sümboli edastuseks, siis UTF-8 kodeeringus esitatud faili suurus on antud sümbolites (diakriitilised sümbolid nn "täpitähed" on UTF-8 kodeeringus mitmebaidilise esitusega). Hinnata, mitme sümboli võrra
             oleks vastuvõtva poole ekraanil sümbolite arv väiksem, kui sidekanalis kasutatakse ülekandel 8-bitist sümbolit. (lugeda need diakriitilised sümbolid kokku).
 
         </p>
-        <p>KIRJUTA LAHENDUS SIIA!
+        <p>15
         </p>4) Arvutada antud faili suuruse teksti (oletame, et faili suurus on antud 7-bitistes sümbolites) teoreetiline edastamise aeg järjestikliidese parameetritel 300/7/E/2..
-        <p>KIRJUTA LAHENDUS SIIA!
+        <p>(1359*7 + 1359*4)/300=49.83s
         </p>5) Liita juurde failis sisalduvate sümbolite hulgale need diakriitilised sümbolid, mis vastuvõtvas arvutis kuvati mitme sümboliga. Arvutada saadud sümbolite hulga teoreetiline edastuse aeg samadel järjestikliidese parameetritel 300/7/E/2.
-        <p>KIRJUTA LAHENDUS SIIA!
+        <p>((1359+15)*7 + (1359+15)*4)/300=50.38s
         </p>6) Teha järeldused katsetulemuste ja arvutuste kohta.
-        <p>KIRJUTA LAHENDUS SIIA!
+        <p>
+			Katsetulemused ja arvutused on peaaegu võrdsed. Erinevus tuleb ilmselt aja mõõtmise täpsusest.
         </p>
 
 
@@ -199,11 +206,16 @@
 
         
 <h2>4. Individuaalülesanne</h2>
-        <p>KIRJUTA INDIVIDUAALÜLESANDE LAHENDUS SIIA!</p>
+        <p>
+        175916*27=4749732 bitti <br>
+        4749732/8=593717 edastutst <br>
+        593717*(2+1+1+8)=7124604 bitti kokku koos alguste ja lõppudega<br>
+        7124604/2400=2969 sekundit.
+        </p>
 
         
 <h2>Kokkuvõte ja järeldused</h2>
-        <p>KIRJUTA KOKKUVÕTE JA JÄRELDUSED SIIA!</p>
+        <p>Labori käigus õppisin tundma, kuidas edastatakse andmeid kahe arvuti vahel paralleelliidese näitel. Labori käigus sain teada, kuidas sõltub tegelik andmete edastamise bitikiirus andmekanali bitikiirusest.</p>
 
 
 
